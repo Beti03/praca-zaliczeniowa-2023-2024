@@ -13,7 +13,13 @@ driver_service = webdriver.FirefoxService(executable_path=geckodriver_path)
 
 @pytest.fixture(scope="function", autouse=True)
 def setup_driver(request):
-    driver = webdriver.Firefox(service=driver_service)
+    options = webdriver.FirefoxOptions()
+    options.add_argument("--headless")
+    # options.add_argument("--no-sandbox")
+    # options.add_argument("--disable-gpu")
+    options.headless = True
+    driver = webdriver.Firefox(service=driver_service, options=options)
+    driver.maximize_window()
     driver.implicitly_wait(10)
     request.cls.driver = driver
     yield
@@ -52,15 +58,4 @@ def set_side_on_product_page(request):
     driver.get("http://www.kubki-reklamowe.eu/polska-ceramika-reklamowa/kubek-ceramiczny-handy-supreme-r-300ml.html")
     driver.implicitly_wait(20)
 
-def convert_data_to_a_new_temporary_list(new_elements_list):
-    """
-    Funkcja przyjmuje listę elementów ze strony www i konwertuje do nowej listy.
-    Dane pobrane np. '120 ml (1)' po konwersji '120 ml'
-    :param new_elements_list:list()
-    :return: list()
-    """
-    # Utworzenie listy tymczasowej dla zmienionych
-    tmp_elements_list = []
-    for i in range(len(new_elements_list)):
-        tmp_elements_list.append(re.sub(r"\s*\(\d+\)", "", str(new_elements_list[i].text)))
-    return tmp_elements_list
+
