@@ -29,9 +29,9 @@ class Test_SC_01_PS_Product_Search_By_Parametrs:
             WARUNKI WSTĘPNE:
             1. Strona ustawiona na http://www.kubki-reklamowe.eu/filizanki-reklamowe-z-logo.html
             KROKI:
-            1. Znajdź menu bocznym o nazwie "Szukaj po parametrze"
+            1. Znajdź nagłówek o nazwie "Szukaj po parametrze"
             2. Znajdź tytył "Pojemność w ml" i zaznacz parametr o wartości "130 ml" i kliknij enter
-            3. Sprawdz czy na stronie zostały wyśwetlone produktu
+            3. Sprawdź czy na stronie zostały wyświetlone produkty
             4. Zlicz ilość wyświetlonych produktów
             REZULTAT:
             1. Na stronie zostanie wyświetlony 1 produkt
@@ -68,9 +68,9 @@ class Test_SC_01_PS_Product_Search_By_Parametrs:
             WARUNKI WSTĘPNE:
             1. Strona ustawiona na http://www.kubki-reklamowe.eu/polska-ceramika-reklamowa.html
             KROKI:
-            1. Znajdź menu bocznym o nazwie "Szukaj po parametrze"
-            2. Znajdź tytył "Kolor" i zaznacz kwadrat w kolorze "czarnym" i kliknij enter
-            3. Sprawdz czy na stronie zostały wyśwetlone produktu
+            1. Znajdź nagłówek o nazwie "Szukaj po parametrze"
+            2. Znajdź nagłówek o nazwie "Kolor" i kliknij w wadrat w kolorze "czarnym"
+            3. Sprawdź czy na stronie zostały wyświetlone produkty
             4. Zlicz ilość wyświetlonych produktów
             REZULTAT:
             1. Na stronie zostanie wyświetlonych 9 produktów

@@ -31,7 +31,7 @@ class Test_SC_02_PS_Product_Search_By_Global_Search:
             1. Strona ustawiona na http://www.kubki-reklamowe.eu
             KROKI:
             1. W pasku wyszukiwania wpisza frazę "kufel" i kliknij enter
-            2. Sprawdz czy w zwróconych towarach jest szykane słowo
+            2. Sprawdź czy w zwróconych towarach jest szykane słowo
             3. Zlicz ilość wyświetlonych produktów
             REZULTAT:
             1. Każdy wyświetlony produkt posiada w nazwie słowo "kufel"
@@ -68,8 +68,8 @@ class Test_SC_02_PS_Product_Search_By_Global_Search:
             1. Strona ustawiona na http://www.kubki-reklamowe.eu
             KROKI:
             1. W pasku wyszukiwania wpisza frazę "kafel" i kliknij enter
-            2. Sprawdz czy na wyświetlonej stronie wyświetlił się tytuł "Wyniki wyszukiwania dla 'kafel'"
-            3. Sprawdz czy na stronie wyświetlił się komunikat o treści "Brak wyszukiwania. "
+            2. Sprawdź czy na wyświetlonej stronie wyświetlił się tytuł "Wyniki wyszukiwania dla 'kafel'"
+            3. Sprawdź czy na stronie wyświetlił się komunikat o treści "Brak wyszukiwania. "
             REZULTAT:
             1. Po wpisaniu frazu, której nie ma w bazie zostanie wyświetlony tytuł "Wyniki wyszukiwania dla 'kafel'"
             2. Po wpisaniu frazu, której nie ma w bazie zostanie wyświetlony komunikat o treści "Brak wyszukiwania. "

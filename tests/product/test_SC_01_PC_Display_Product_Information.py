@@ -28,7 +28,7 @@ class Test_SC_01_PC_Display_Product_Information:
             KROKI:
             1. Znajdź nazwę produktu "Kubek ceramiczny HANDY SUPREME ® 300ml"
             REZULTAT:
-            1. Na stronie z wyświetlony produkt będize posiadał nazwę "Kubek ceramiczny HANDY SUPREME ® 300ml"
+            1. Na stronie z wyświetlony produkt będzie posiadał nazwę "Kubek ceramiczny HANDY SUPREME ® 300ml"
         """
         product_name_on_page = self.driver.find_element(*self.PRODUCT_TITLE)
         assert product_name_on_page.text == self.EXPECTED_PRODUCT_TITLE

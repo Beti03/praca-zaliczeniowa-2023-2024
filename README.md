@@ -1,7 +1,7 @@
-## Praca Zaliczeniowa 2023-2034 
+## Praca Zaliczeniowa 2023-2024 
 ### Uniwersytet WSB Merito we Wrocławiu 
 ### Studia podyplomowe na kierunku Tester oprogramownia 
-# Automatyzacja testów sklepu internetowego z wykorzystaniem frameworks Selenium, Pytest i języka programowania Python
+# Automatyzacja testów dla sklepu internetowego z wykorzystaniem języka programowania Python, oraz framework Selenium i Pytest 
 #### Spis treści
 1. [Utworzenie środowiska testowego](#1-utworzenie-środowiska-testowego)
 2. [Konfiguracja Allure](#2-uruchomienie-testów)
@@ -119,16 +119,16 @@ class Test_SC_01_PS_Product_Search_By_Parametrs:
     @pytest.mark.usefixtures("set_side_on_cups")
     def test_SC_01_PS_TC_01_Product_Search_By_Capacity(self):
         """
-        CEL: Sprawdzenie czy po wybraniu pojemności "130 ml" w menu "Szukaj po parametrze" zostanie zwrócona odpowienia liczba produktów na stronie
-            WARUNKI WSTĘPNE:
-            1. Strona ustawiona na http://www.kubki-reklamowe.eu/filizanki-reklamowe-z-logo.html
-            KROKI:
-            1. Znajdź menu bocznym o nazwie "Szukaj po parametrze"
-            2. Znajdź tytył "Pojemność w ml" i zaznacz parametr o wartości "130 ml" i kliknij enter
-            3. Sprawdz czy na stronie zostały wyśwetlone produktu
-            4. Zlicz ilość wyświetlonych produktów
-            REZULTAT:
-            1. Na stronie zostanie wyświetlony 1 produkt
+        CEL: Sprawdzenie czy po wybraniu pojemności "130 ml" w menu "Szukaj po parametrze" zostanie zwrócona odpowienia liczba produktów na stronie. 
+            WARUNKI WSTĘPNE: 
+                1. Strona ustawiona na http://www.kubki-reklamowe.eu/filizanki-reklamowe-z-logo.html 
+            KROKI: 
+            1. Znajdź nagłówek o nazwie "Szukaj po parametrze" 
+            2. Znajdź tytuł "Pojemność w ml" i zaznacz parametr o wartości "130 ml" i kliknij enter 
+            2. Sprawdz czy na stronie zostały wyświetlone produkty 
+            3. Zlicz ilość wyświetlonych produktów 
+            REZULTAT: 
+            1. Na stronie zostanie wyświetlony 1 produkt 
         """
         list_of_available_capacities = self.driver.find_elements(*self.CAPACITY_LIST)
         tmp_elements_list = convert_data_to_a_new_temporary_list(list_of_available_capacities)
@@ -162,9 +162,9 @@ class Test_SC_01_PS_Product_Search_By_Parametrs:
             WARUNKI WSTĘPNE:
             1. Strona ustawiona na http://www.kubki-reklamowe.eu/polska-ceramika-reklamowa.html
             KROKI:
-            1. Znajdź menu bocznym o nazwie "Szukaj po parametrze"
-            2. Znajdź tytył "Kolor" i zaznacz kwadrat w kolorze "czarnym" i kliknij enter
-            3. Sprawdz czy na stronie zostały wyśwetlone produktu
+            1. Znajdź nagłówek o nazwie "Szukaj po parametrze"
+            2. Znajdź nagłówek o nazwie "Kolor" i kliknij w kwadrat w kolorze "czarnym"
+            3. Sprawdź czy na stronie zostały wyśwetlone produkty
             4. Zlicz ilość wyświetlonych produktów
             REZULTAT:
             1. Na stronie zostanie wyświetlonych 9 produktów
@@ -226,7 +226,7 @@ class Test_SC_02_PS_Product_Search_By_Global_Search:
             1. Strona ustawiona na http://www.kubki-reklamowe.eu
             KROKI:
             1. W pasku wyszukiwania wpisza frazę "kufel" i kliknij enter
-            2. Sprawdz czy w zwróconych towarach jest szykane słowo
+            2. Sprawdź czy w zwróconych towarach jest szykane słowo
             3. Zlicz ilość wyświetlonych produktów
             REZULTAT:
             1. Każdy wyświetlony produkt posiada w nazwie słowo "kufel"
@@ -263,8 +263,8 @@ class Test_SC_02_PS_Product_Search_By_Global_Search:
             1. Strona ustawiona na http://www.kubki-reklamowe.eu
             KROKI:
             1. W pasku wyszukiwania wpisza frazę "kafel" i kliknij enter
-            2. Sprawdz czy na wyświetlonej stronie wyświetlił się tytuł "Wyniki wyszukiwania dla 'kafel'"
-            3. Sprawdz czy na stronie wyświetlił się komunikat o treści "Brak wyszukiwania. "
+            2. Sprawdź czy na wyświetlonej stronie wyświetlił się tytuł "Wyniki wyszukiwania dla 'kafel'"
+            3. Sprawdź czy na stronie wyświetlił się komunikat o treści "Brak wyszukiwania. "
             REZULTAT:
             1. Po wpisaniu frazu, której nie ma w bazie zostanie wyświetlony tytuł "Wyniki wyszukiwania dla 'kafel'"
             2. Po wpisaniu frazu, której nie ma w bazie zostanie wyświetlony komunikat o treści "Brak wyszukiwania. "
@@ -318,7 +318,7 @@ class Test_SC_01_PC_Display_Product_Information:
             KROKI:
             1. Znajdź nazwę produktu "Kubek ceramiczny HANDY SUPREME ® 300ml"
             REZULTAT:
-            1. Na stronie z wyświetlony produkt będize posiadał nazwę "Kubek ceramiczny HANDY SUPREME ® 300ml"
+            1. Na stronie z wyświetlony produkt będzie posiadał nazwę "Kubek ceramiczny HANDY SUPREME ® 300ml"
         """
         product_name_on_page = self.driver.find_element(*self.PRODUCT_TITLE)
         assert product_name_on_page.text == self.EXPECTED_PRODUCT_TITLE
