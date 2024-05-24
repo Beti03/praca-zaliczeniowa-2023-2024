@@ -1,7 +1,6 @@
 allure-pytest==2.13.5
 allure-python-commons==2.13.5
 attrs==23.2.0
--e git+https://github.com/Beti03/praca-zaliczeniowa-2023-2034.git@9a93842fc13cfd2cec2028fab882e8a0aeabfc09#egg=beti03_source
 certifi==2024.2.2
 h11==0.14.0
 idna==3.7
