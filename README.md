@@ -56,6 +56,15 @@ allure serve allure-results
 ```
 2. Po wygenerowaniu raportu powinna otworzyć się następująca strona
 ![img.png](img/img.png)
+3. W celu poprawnego wygenerowania raportu z Visual Studio Code wymagana jest edycja pliku settings.json.
+```bash
+path View -> Command Pallete -> Open User Settings(JSON)
+
+"terminal.integrated.env.linux": {
+        "GTK_PATH": null,
+        "GIO_MODULE_DIR": null,
+    },
+```
 ### 5. Struktura katalogów
 ```bash
 ├── allure-results/
