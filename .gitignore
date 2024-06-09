@@ -7,3 +7,6 @@
 out
 gen
 .venv
+src/beti03_source.egg-info
+.pytest_cache
+tests/__pycache__
