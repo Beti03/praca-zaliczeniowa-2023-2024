@@ -3,12 +3,14 @@
 ### Studia podyplomowe na kierunku Tester oprogramownia 
 # Automatyzacja testów dla sklepu internetowego z wykorzystaniem języka programowania Python, oraz framework Selenium i Pytest 
 #### Spis treści
-1. [Utworzenie środowiska testowego](#1-utworzenie-środowiska-testowego)
-2. [Konfiguracja Allure](#2-uruchomienie-testów)
-3. [Uruchomienie testów](#3-uruchomienie-testów)
-4. [Generowanie raport z testów](#4-generowanie-raport-z-testów)
-5. [Struktura katalogów](#5-struktura-katalogów)
-6. [Listing kodu](#6-listing-kodu)
+- [Automatyzacja testów dla sklepu internetowego z wykorzystaniem języka programowania Python, oraz framework Selenium i Pytest](#automatyzacja-testów-dla-sklepu-internetowego-z-wykorzystaniem-języka-programowania-python-oraz-framework-selenium-i-pytest)
+      - [Spis treści](#spis-treści)
+    - [1. Utworzenie środowiska testowego](#1-utworzenie-środowiska-testowego)
+    - [2. Konfiguracja Allure](#2-konfiguracja-allure)
+    - [3. Uruchomienie testów](#3-uruchomienie-testów)
+    - [4. Generowanie raport z testów](#4-generowanie-raport-z-testów)
+    - [5. Struktura katalogów](#5-struktura-katalogów)
+    - [6. Listing kodu](#6-listing-kodu)
 
 ### 1. Utworzenie środowiska testowego
 1. Tworzenie środowiska testowego
@@ -17,7 +19,7 @@ python3 -m venv .venv
 ```
 2. Uruchomienie środowiska
 ```bash
-source .venv/bin/active
+source .venv/bin/activate
 ```
 3. Instalacja wymaganych pakietów WAŻNE !! Przed wykonanie tego punktu wykonaj instalację Allure
 ```bash
